@@ -1,0 +1,82 @@
+@font-face {
+    font-family: Bungee_Shade;
+    src: url("Bungee_Shade/BungeeShade-Regular.ttf");
+}
+
+@font-face {
+    font-family: Bungee_Outline;
+    src: url("Bungee_Outline/BungeeOutline-Regular.ttf");
+}
+
+body {
+    margin: 0;
+    background-image: url("images/konsert4.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.one {
+    padding-top: 20vh;
+}
+
+.under {
+    border-radius: 20px;
+    width: 90vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+nav {
+    text-align: center;
+    display: flex;
+    gap: 5px;
+    padding: 30px;
+}
+
+.meny {
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 30px;
+    flex-grow: 1;
+    background-color: rgba(234, 227, 227, 0.765);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.marked {
+    font-weight: bold;
+}
+
+header {
+    color: rgba(234, 227, 227, 0.765);
+    font-family: Bungee_Shade;
+    font-size: 50px;
+    padding-left: 20px;
+}
+
+.rubrik {
+    font-family: Bungee_Outline;
+    font-size: 40px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
+
+#are_you_experienced {
+    border: 1px solid white;
+    margin: 30px;
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+}
