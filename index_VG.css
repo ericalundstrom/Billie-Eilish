@@ -11,72 +11,188 @@
 body {
     margin: 0;
     background-image: url("images/konsert4.jpg");
-    background-size: 100% 100%;
     background-repeat: no-repeat;
-
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.one {
-    padding-top: 20vh;
-}
-
-.under {
-    border-radius: 20px;
-    width: 90vw;
-    background-color: rgba(0, 0, 0, 0.4);
-    overflow: hidden;
-}
-
-nav {
-    text-align: center;
-    display: flex;
-    gap: 5px;
-    padding: 30px;
-}
-
-.meny {
-    border-radius: 10px;
-    font-size: 30px;
-    padding: 30px;
-    flex-grow: 1;
-    background-color: rgba(234, 227, 227, 0.765);
+    height: 100vh;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body>div>div {
+    background-color: rgba(28, 27, 27, 0.581);
+    margin: 5vw;
+    border-radius: 20px;
+}
+
+article {
+    background-color: rgba(76, 73, 73, 0.445);
+    margin: 2vw;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: repeat(3, auto);
+}
+
+header {
+    font-family: Bungee_Outline;
+    font-size: 4vw;
+    color: rgba(255, 255, 255, 0.809);
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 5px;
+    height: 90px;
+    margin: 2vw;
+}
+
+.meny {
+    display: flex;
+    background-color: white;
+    color: black;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 35px;
+}
+
 .box:hover {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.655);
     color: white;
 }
 
 .marked {
-    font-weight: bold;
+    font-weight: bolder;
 }
 
-header {
-    color: rgba(234, 227, 227, 0.765);
-    font-family: Bungee_Shade;
-    font-size: 50px;
+.album_data {
     padding-left: 20px;
 }
 
-.rubrik {
-    font-family: Bungee_Outline;
-    font-size: 40px;
+.album_data>div>h1 {
+    font-family: Bungee_Shade;
+    font-size: 6vh;
 }
 
-img {
-    width: 300px;
+.album_description {
+    font-size: 2vh;
+    max-width: 600px;
+    padding-top: 30px;
+}
+
+.cover {
+    position: relative;
+    margin: 10px;
+    grid-column: 2;
+}
+
+.show_hover {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 20px 20px 0 0;
+}
+
+.show_not_hover {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.show_hover:hover {
+    opacity: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.song_list {
+    gap: 10px;
+    grid-column: 2/span 3;
+    height: 100%;
+    font-size: 2vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sida1 {
+    background-color: black;
+    margin-left: 10px;
+    border-radius: 0 0 0 20px;
+}
+
+.sida2 {
+    background-color: black;
+    margin-right: 10px;
+    border-radius: 0 0 20px 0;
+}
+
+.song_list>.sida1>h2 {
+    padding-left: 20px;
+}
+
+.song_list>.sida2>h2 {
+    padding-left: 20px;
+}
+
+.anecdotes {
+    grid-column: 1/span 3;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
     height: 300px;
+    gap: 20px;
+    padding: 20px;
 }
 
-#are_you_experienced {
-    border: 1px solid white;
-    margin: 30px;
-    border-radius: 20px;
-    padding: 30px;
-    color: white;
+.top_right_90,
+.two_wide,
+.image_1,
+.bottom_right_90 {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.top_right_90 {
+    background-color: black;
+    grid-column: 1;
+    grid-row: 1;
+    border-radius: 20px 0 20px 20px;
+
+}
+
+.two_wide {
+    background-color: black;
+    grid-column: 3/span 2;
+    grid-row: 1;
+    border-radius: 20px 20px 20px 0;
+}
+
+.image_1 {
+    background-image: url("images/Finneas.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 150px;
+    grid-column: 5;
+    grid-row: 1;
+    align-items: flex-end;
+    border-radius: 0 20px 20px 20px;
+    padding-bottom: 10px;
+}
+
+.bottom_right_90 {
+    grid-column: 6;
+    grid-row: 1;
+    border-radius: 20px 20px 0px 20px;
 }
